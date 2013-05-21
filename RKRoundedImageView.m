@@ -12,11 +12,36 @@
 
 - (UIImage *)imageWithSize:(CGSize)size cornerRadius:(CGFloat)radius {
     UIImage *newImage;
-    CGRect imageRect = CGRectMake(0, 0, size.width, size.height);
-    UIGraphicsBeginImageContextWithOptions(imageRect.size, NO, 0.0);
-    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:imageRect cornerRadius:radius];
+
+    float width = 0;
+    float height = 0;
+    float ratio = self.size.width / self.size.height;
+    if (size.width <= size.height) {
+        if (self.size.width > self.size.height) {
+            height = size.height;
+            width = ratio * height;
+        } else {
+            width = size.width;
+            height = width / ratio;
+        }
+    } else {
+        if (self.size.width < self.size.height) {
+            height = size.height;
+            width = ratio * height;
+        } else {
+            width = size.width;
+            height = width / ratio;
+        }
+    }
+
+    CGRect imageRect = CGRectMake(0, 0, width, height);
+    UIGraphicsBeginImageContextWithOptions(imageRect.size, NO, [[UIScreen mainScreen] scale]);
+
+    CGRect roundedRect = CGRectMake((width - size.width) / 2, (height - size.height) / 2, size.width, size.height);
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:roundedRect cornerRadius:radius];
     [path addClip];
     [self drawInRect:imageRect];
+
     newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return newImage;
@@ -50,6 +75,7 @@
 
 - (void)initilize {
     _cornerRadius = DEFAULT_CORNER_RADIUS;
+    self.contentMode = UIViewContentModeScaleAspectFill;
 }
 
 #pragma mark - Properties
