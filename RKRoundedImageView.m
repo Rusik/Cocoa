@@ -16,22 +16,11 @@
     float width = 0;
     float height = 0;
     float ratio = self.size.width / self.size.height;
-    if (size.width <= size.height) {
-        if (self.size.width > self.size.height) {
-            height = size.height;
-            width = ratio * height;
-        } else {
-            width = size.width;
-            height = width / ratio;
-        }
-    } else {
-        if (self.size.width < self.size.height) {
-            height = size.height;
-            width = ratio * height;
-        } else {
-            width = size.width;
-            height = width / ratio;
-        }
+    height = size.height;
+    width = height * ratio;
+    if (width < size.width) {
+        width = size.width;
+        height = width / ratio;
     }
 
     CGRect imageRect = CGRectMake(0, 0, width, height);
