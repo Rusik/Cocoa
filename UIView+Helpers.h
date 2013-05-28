@@ -27,4 +27,7 @@ typedef CGRect (^UIViewFrameAdjustBlock)(CGRect frame);
 //Rotation
 - (void)rotateViewToOrientation:(UIInterfaceOrientation)orientation animated:(BOOL)animated;
 
+//Other
+- (void)recursiveEnumerateSubviewsUsingBlock:(void (^)(UIView *view, BOOL *stop))block;
+
 @end

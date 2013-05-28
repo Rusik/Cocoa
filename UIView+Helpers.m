@@ -101,4 +101,20 @@
 	}
 }
 
+#pragma mark - Other
+
+- (void)recursiveEnumerateSubviewsUsingBlock:(void (^)(UIView *view, BOOL *stop))block {
+	if (self.subviews.count == 0) {
+		return;
+	}
+	for (UIView *subview in self.subviews) {
+		BOOL stop = NO;
+		block(subview, &stop);
+		if (stop) {
+			return;
+		}
+		[subview recursiveEnumerateSubviewsUsingBlock:block];
+	}
+}
+
 @end
