@@ -15,7 +15,7 @@ typedef CGRect (^UIViewFrameAdjustBlock)(CGRect frame);
 //Nib
 + (NSString *)nibName;
 + (id)loadFromNib;
-+ (id)loadFromNibNamed:(NSString*)nibName;
++ (id)loadFromNibNamed:(NSString *)nibName;
 
 //Frame
 - (void)adjustFrame:(UIViewFrameAdjustBlock)block;
