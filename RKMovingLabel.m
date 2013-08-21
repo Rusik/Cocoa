@@ -131,8 +131,8 @@
 	self.clipsToBounds = YES;
 	
 	separatorWidth = DEFAULT_SEPARATOR_WIDTH;
-	font = [[UIFont systemFontOfSize:DEFAULT_FONT_SIZE] retain];
-	textColor = [[self defaultTextColor] retain];
+	font = [UIFont systemFontOfSize:DEFAULT_FONT_SIZE];
+	textColor = [self defaultTextColor];
 	stopTimeInterval = DEFAULT_STOP_TIME_INTERVAL;
 	fadeLength = DEFAULT_FADE_LENGTH;
 	
@@ -185,8 +185,6 @@
 	if (aFont == font) {
 		return;
 	}
-	[font release];
-	font = [aFont retain];
 	
 	[self updateLabels];
 	[self updateLabelsFrame];
@@ -204,8 +202,6 @@
 	if (textColor == aTextColor) {
 		return;
 	}
-	[textColor release];
-	textColor = [aTextColor retain];
 	
 	[self updateLabels];
 }
@@ -238,11 +234,4 @@
 	return self;
 }
 
-- (void)dealloc {
-	[label1 release];
-	[label2 release];
-	[font release];
-	[textColor release];
-	[super dealloc];
-}
 @end
