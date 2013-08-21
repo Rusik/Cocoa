@@ -13,3 +13,7 @@ Image view with image with rounded corners.
 UIView+Helpers
 =============
 Helprers for UIView (frame manipulation, load from nib, rotation).
+
+NSDate+Helpers
+==============
+Helprers for NSDate (later, earlier, between).
