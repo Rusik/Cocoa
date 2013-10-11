@@ -19,11 +19,15 @@
 		7FCAB82F17C4CD7E00F54EC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCAB82E17C4CD7E00F54EC6 /* ViewController.m */; };
 		7FCAB83217C4CD7E00F54EC6 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FCAB83017C4CD7E00F54EC6 /* ViewController.xib */; };
 		7FCAB84B17C4CE8300F54EC6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCAB84A17C4CE8300F54EC6 /* QuartzCore.framework */; };
-		7FCAB85717C4CF5300F54EC6 /* NSDate+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCAB84E17C4CF5300F54EC6 /* NSDate+Helpers.m */; };
-		7FCAB85817C4CF5300F54EC6 /* RKMovingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCAB85017C4CF5300F54EC6 /* RKMovingLabel.m */; };
-		7FCAB85917C4CF5300F54EC6 /* RKRoundedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCAB85217C4CF5300F54EC6 /* RKRoundedImageView.m */; };
-		7FCAB85A17C4CF5300F54EC6 /* RKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCAB85417C4CF5300F54EC6 /* RKTableViewCell.m */; };
-		7FCAB85B17C4CF5300F54EC6 /* UIView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCAB85617C4CF5300F54EC6 /* UIView+Helpers.m */; };
+		7FFCC40218082A7200CA9E52 /* NSDate+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCC3F518082A7200CA9E52 /* NSDate+Helpers.m */; };
+		7FFCC40318082A7200CA9E52 /* RKMovingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCC3F718082A7200CA9E52 /* RKMovingLabel.m */; };
+		7FFCC40418082A7200CA9E52 /* RKRoundedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCC3F918082A7200CA9E52 /* RKRoundedImageView.m */; };
+		7FFCC40518082A7200CA9E52 /* RKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCC3FB18082A7200CA9E52 /* RKTableViewCell.m */; };
+		7FFCC40618082A7200CA9E52 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCC3FD18082A7200CA9E52 /* UIImage+ImageEffects.m */; };
+		7FFCC40718082A7200CA9E52 /* UITextField+Cursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCC3FF18082A7200CA9E52 /* UITextField+Cursor.m */; };
+		7FFCC40818082A7200CA9E52 /* UIView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCC40118082A7200CA9E52 /* UIView+Helpers.m */; };
+		7FFCC40B18082A8800CA9E52 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCC40A18082A8800CA9E52 /* UIActionSheet+Blocks.m */; };
+		7FFCC40D1808313300CA9E52 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFCC40C1808313300CA9E52 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,16 +48,23 @@
 		7FCAB82E17C4CD7E00F54EC6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7FCAB83117C4CD7E00F54EC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		7FCAB84A17C4CE8300F54EC6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		7FCAB84D17C4CF5300F54EC6 /* NSDate+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helpers.h"; sourceTree = "<group>"; };
-		7FCAB84E17C4CF5300F54EC6 /* NSDate+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helpers.m"; sourceTree = "<group>"; };
-		7FCAB84F17C4CF5300F54EC6 /* RKMovingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKMovingLabel.h; sourceTree = "<group>"; };
-		7FCAB85017C4CF5300F54EC6 /* RKMovingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKMovingLabel.m; sourceTree = "<group>"; };
-		7FCAB85117C4CF5300F54EC6 /* RKRoundedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKRoundedImageView.h; sourceTree = "<group>"; };
-		7FCAB85217C4CF5300F54EC6 /* RKRoundedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKRoundedImageView.m; sourceTree = "<group>"; };
-		7FCAB85317C4CF5300F54EC6 /* RKTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTableViewCell.h; sourceTree = "<group>"; };
-		7FCAB85417C4CF5300F54EC6 /* RKTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTableViewCell.m; sourceTree = "<group>"; };
-		7FCAB85517C4CF5300F54EC6 /* UIView+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helpers.h"; sourceTree = "<group>"; };
-		7FCAB85617C4CF5300F54EC6 /* UIView+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helpers.m"; sourceTree = "<group>"; };
+		7FFCC3F418082A7200CA9E52 /* NSDate+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helpers.h"; sourceTree = "<group>"; };
+		7FFCC3F518082A7200CA9E52 /* NSDate+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helpers.m"; sourceTree = "<group>"; };
+		7FFCC3F618082A7200CA9E52 /* RKMovingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKMovingLabel.h; sourceTree = "<group>"; };
+		7FFCC3F718082A7200CA9E52 /* RKMovingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKMovingLabel.m; sourceTree = "<group>"; };
+		7FFCC3F818082A7200CA9E52 /* RKRoundedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKRoundedImageView.h; sourceTree = "<group>"; };
+		7FFCC3F918082A7200CA9E52 /* RKRoundedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKRoundedImageView.m; sourceTree = "<group>"; };
+		7FFCC3FA18082A7200CA9E52 /* RKTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTableViewCell.h; sourceTree = "<group>"; };
+		7FFCC3FB18082A7200CA9E52 /* RKTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTableViewCell.m; sourceTree = "<group>"; };
+		7FFCC3FC18082A7200CA9E52 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		7FFCC3FD18082A7200CA9E52 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		7FFCC3FE18082A7200CA9E52 /* UITextField+Cursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Cursor.h"; sourceTree = "<group>"; };
+		7FFCC3FF18082A7200CA9E52 /* UITextField+Cursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Cursor.m"; sourceTree = "<group>"; };
+		7FFCC40018082A7200CA9E52 /* UIView+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helpers.h"; sourceTree = "<group>"; };
+		7FFCC40118082A7200CA9E52 /* UIView+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helpers.m"; sourceTree = "<group>"; };
+		7FFCC40918082A8800CA9E52 /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
+		7FFCC40A18082A8800CA9E52 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
+		7FFCC40C1808313300CA9E52 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFCC40D1808313300CA9E52 /* Accelerate.framework in Frameworks */,
 				7FCAB84B17C4CE8300F54EC6 /* QuartzCore.framework in Frameworks */,
 				7FCAB81617C4CD7E00F54EC6 /* UIKit.framework in Frameworks */,
 				7FCAB81817C4CD7E00F54EC6 /* Foundation.framework in Frameworks */,
@@ -92,6 +104,7 @@
 		7FCAB81417C4CD7E00F54EC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7FFCC40C1808313300CA9E52 /* Accelerate.framework */,
 				7FCAB84A17C4CE8300F54EC6 /* QuartzCore.framework */,
 				7FCAB81517C4CD7E00F54EC6 /* UIKit.framework */,
 				7FCAB81717C4CD7E00F54EC6 /* Foundation.framework */,
@@ -130,16 +143,22 @@
 		7FCAB84C17C4CF5300F54EC6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				7FCAB84D17C4CF5300F54EC6 /* NSDate+Helpers.h */,
-				7FCAB84E17C4CF5300F54EC6 /* NSDate+Helpers.m */,
-				7FCAB84F17C4CF5300F54EC6 /* RKMovingLabel.h */,
-				7FCAB85017C4CF5300F54EC6 /* RKMovingLabel.m */,
-				7FCAB85117C4CF5300F54EC6 /* RKRoundedImageView.h */,
-				7FCAB85217C4CF5300F54EC6 /* RKRoundedImageView.m */,
-				7FCAB85317C4CF5300F54EC6 /* RKTableViewCell.h */,
-				7FCAB85417C4CF5300F54EC6 /* RKTableViewCell.m */,
-				7FCAB85517C4CF5300F54EC6 /* UIView+Helpers.h */,
-				7FCAB85617C4CF5300F54EC6 /* UIView+Helpers.m */,
+				7FFCC3F418082A7200CA9E52 /* NSDate+Helpers.h */,
+				7FFCC3F518082A7200CA9E52 /* NSDate+Helpers.m */,
+				7FFCC3F618082A7200CA9E52 /* RKMovingLabel.h */,
+				7FFCC3F718082A7200CA9E52 /* RKMovingLabel.m */,
+				7FFCC3F818082A7200CA9E52 /* RKRoundedImageView.h */,
+				7FFCC3F918082A7200CA9E52 /* RKRoundedImageView.m */,
+				7FFCC3FA18082A7200CA9E52 /* RKTableViewCell.h */,
+				7FFCC3FB18082A7200CA9E52 /* RKTableViewCell.m */,
+				7FFCC3FC18082A7200CA9E52 /* UIImage+ImageEffects.h */,
+				7FFCC3FD18082A7200CA9E52 /* UIImage+ImageEffects.m */,
+				7FFCC3FE18082A7200CA9E52 /* UITextField+Cursor.h */,
+				7FFCC3FF18082A7200CA9E52 /* UITextField+Cursor.m */,
+				7FFCC40018082A7200CA9E52 /* UIView+Helpers.h */,
+				7FFCC40118082A7200CA9E52 /* UIView+Helpers.m */,
+				7FFCC40918082A8800CA9E52 /* UIActionSheet+Blocks.h */,
+				7FFCC40A18082A8800CA9E52 /* UIActionSheet+Blocks.m */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -214,11 +233,14 @@
 				7FCAB82217C4CD7E00F54EC6 /* main.m in Sources */,
 				7FCAB82617C4CD7E00F54EC6 /* AppDelegate.m in Sources */,
 				7FCAB82F17C4CD7E00F54EC6 /* ViewController.m in Sources */,
-				7FCAB85717C4CF5300F54EC6 /* NSDate+Helpers.m in Sources */,
-				7FCAB85817C4CF5300F54EC6 /* RKMovingLabel.m in Sources */,
-				7FCAB85917C4CF5300F54EC6 /* RKRoundedImageView.m in Sources */,
-				7FCAB85A17C4CF5300F54EC6 /* RKTableViewCell.m in Sources */,
-				7FCAB85B17C4CF5300F54EC6 /* UIView+Helpers.m in Sources */,
+				7FFCC40218082A7200CA9E52 /* NSDate+Helpers.m in Sources */,
+				7FFCC40318082A7200CA9E52 /* RKMovingLabel.m in Sources */,
+				7FFCC40418082A7200CA9E52 /* RKRoundedImageView.m in Sources */,
+				7FFCC40518082A7200CA9E52 /* RKTableViewCell.m in Sources */,
+				7FFCC40618082A7200CA9E52 /* UIImage+ImageEffects.m in Sources */,
+				7FFCC40718082A7200CA9E52 /* UITextField+Cursor.m in Sources */,
+				7FFCC40818082A7200CA9E52 /* UIView+Helpers.m in Sources */,
+				7FFCC40B18082A8800CA9E52 /* UIActionSheet+Blocks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +363,7 @@
 				7FCAB83717C4CD7E00F54EC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

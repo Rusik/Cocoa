@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIActionSheet+Blocks.h"
 
 @interface ViewController ()
 
@@ -14,16 +15,23 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
+- (IBAction)showActionSheet {
+    UIActionSheet *sheet = [UIActionSheet actionSheetWithTitle:@"Action sheet"];
+    [sheet addButtonWithTitle:@"One" action:^{
+        NSLog(@"One");
+    }];
+    [sheet addButtonWithTitle:@"Two" action:^{
+        NSLog(@"Two");
+    }];
+    [sheet addDestructiveButtonWithTitle:@"Delete" action:^{
+        NSLog(@"Delete");
+    }];
+    [sheet addCancelButtonWithTitle:@"Cancel" action:nil];
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [sheet setDismissAction:^{
+        NSLog(@"Dismiss");
+    }];
+    [sheet showInView:self.view];
 }
 
 @end
