@@ -1,8 +1,7 @@
 //
 //  UITextField+Cursor.h
-//  choicer
 //
-//  Created by Ruslan Kavetsky on 16.09.13
+//  Created by Ruslan Kavetsky.
 //  Copyright (c) 2013 Ruslan Kavetsky. All rights reserved.
 //
 

@@ -1,8 +1,7 @@
 //
 //  UIActionSheet+Blocks.m
-//  Sample
 //
-//  Created by Ruslan Kavetsky on 10/11/13.
+//  Created by Ruslan Kavetsky.
 //  Copyright (c) 2013 Ruslan Kavetsky. All rights reserved.
 //
 

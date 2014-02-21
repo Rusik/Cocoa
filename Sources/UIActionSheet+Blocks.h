@@ -1,14 +1,13 @@
 //
 //  UIActionSheet+Blocks.h
-//  Sample
 //
-//  Created by Ruslan Kavetsky on 10/11/13.
+//  Created by Ruslan Kavetsky.
 //  Copyright (c) 2013 Ruslan Kavetsky. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-typedef void(^RKBlockAction)(void);
+typedef void (^RKBlockAction)(void);
 typedef RKBlockAction UIActionSheetAction;
 
 @interface UIActionSheet (MyBlocks)

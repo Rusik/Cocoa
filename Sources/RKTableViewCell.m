@@ -1,7 +1,7 @@
 //
 //  RKTableViewCell.m
 //
-//  Created by Ruslan Kavetsky on 8/16/12.
+//  Created by Ruslan Kavetsky.
 //  Copyright (c) 2012 Ruslan Kavetsky. All rights reserved.
 //
 

@@ -1,8 +1,7 @@
 //
 //  UIView+Helpers.m
-//  helpers
 //
-//  Created by Ruslan on 12/13/12.
+//  Created by Ruslan Kavetsky.
 //  Copyright (c) 2012 Ruslan. All rights reserved.
 //
 
@@ -91,7 +90,7 @@
 }
 
 - (void)moveBy:(CGPoint)offset {
-	[self adjustFrame: ^CGRect (CGRect frame) {
+	[self adjustFrame:^CGRect (CGRect frame) {
 	    frame.origin.x += offset.x;
 	    frame.origin.y += offset.y;
 	    return frame;
@@ -99,21 +98,21 @@
 }
 
 - (void)moveTo:(CGPoint)origin {
-	[self adjustFrame: ^CGRect (CGRect frame) {
+	[self adjustFrame:^CGRect (CGRect frame) {
 	    frame.origin = origin;
 	    return frame;
 	}];
 }
 
 - (void)resizeTo:(CGSize)size {
-	[self adjustFrame: ^CGRect (CGRect frame) {
+	[self adjustFrame:^CGRect (CGRect frame) {
 	    frame.size = size;
 	    return frame;
 	}];
 }
 
 - (void)expand:(CGSize)size {
-	[self adjustFrame: ^CGRect (CGRect frame) {
+	[self adjustFrame:^CGRect (CGRect frame) {
 	    frame.size.width += size.width;
 	    frame.size.height += size.height;
 	    return frame;
@@ -198,6 +197,37 @@
 
 - (void)set$bottom:(CGFloat)bottom {
 	self.frame = (CGRect) {.origin = self.frame.origin, .size.width = self.frame.size.width, .size.height = fmaxf(bottom - self.frame.origin.y, 0) };
+}
+
+- (UIView *)findFirstResponder {
+	if (self.isFirstResponder) {
+		return self;
+	}
+
+	for (UIView *subview in self.subviews) {
+		UIView *firstResponder = [subview findFirstResponder];
+		if (firstResponder) {
+			return firstResponder;
+		}
+	}
+
+	return nil;
+}
+
+#pragma mark - Rotation
+
+- (void)runSpinAnimationWithDuration:(CGFloat)duration
+                           rotations:(CGFloat)rotations
+                              repeat:(float)repeat {
+
+	CABasicAnimation *rotationAnimation;
+	rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+	rotationAnimation.toValue = [NSNumber numberWithFloat:M_PI * 2.0 /* full rotation*/ * rotations * duration];
+	rotationAnimation.duration = duration;
+	rotationAnimation.cumulative = YES;
+	rotationAnimation.repeatCount = repeat; //HUGE_VALF to forever
+
+	[self.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
 }
 
 @end

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FB3438218B7930900EF3F8E /* UIView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3438118B7930900EF3F8E /* UIView+Helpers.m */; };
+		7FB3438518B793AA00EF3F8E /* UIToolbar+AccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3438418B793AA00EF3F8E /* UIToolbar+AccessoryView.m */; };
+		7FB3438818B793BB00EF3F8E /* NSObject+ios7support.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3438718B793BB00EF3F8E /* NSObject+ios7support.m */; };
+		7FB3438B18B7957500EF3F8E /* RKOnePixelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3438A18B7957500EF3F8E /* RKOnePixelView.m */; };
+		7FB3439318B7964500EF3F8E /* UITableViewCell+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3439218B7964500EF3F8E /* UITableViewCell+Helpers.m */; };
+		7FB3439618B7966B00EF3F8E /* NSObject+NIB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3439518B7966B00EF3F8E /* NSObject+NIB.m */; };
 		7FCAB81617C4CD7E00F54EC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCAB81517C4CD7E00F54EC6 /* UIKit.framework */; };
 		7FCAB81817C4CD7E00F54EC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCAB81717C4CD7E00F54EC6 /* Foundation.framework */; };
 		7FCAB81A17C4CD7E00F54EC6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FCAB81917C4CD7E00F54EC6 /* CoreGraphics.framework */; };
@@ -25,12 +31,23 @@
 		7FFCC40518082A7200CA9E52 /* RKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCC3FB18082A7200CA9E52 /* RKTableViewCell.m */; };
 		7FFCC40618082A7200CA9E52 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCC3FD18082A7200CA9E52 /* UIImage+ImageEffects.m */; };
 		7FFCC40718082A7200CA9E52 /* UITextField+Cursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCC3FF18082A7200CA9E52 /* UITextField+Cursor.m */; };
-		7FFCC40818082A7200CA9E52 /* UIView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCC40118082A7200CA9E52 /* UIView+Helpers.m */; };
 		7FFCC40B18082A8800CA9E52 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCC40A18082A8800CA9E52 /* UIActionSheet+Blocks.m */; };
 		7FFCC40D1808313300CA9E52 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFCC40C1808313300CA9E52 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FB3438018B7930900EF3F8E /* UIView+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helpers.h"; sourceTree = "<group>"; };
+		7FB3438118B7930900EF3F8E /* UIView+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helpers.m"; sourceTree = "<group>"; };
+		7FB3438318B793AA00EF3F8E /* UIToolbar+AccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+AccessoryView.h"; sourceTree = "<group>"; };
+		7FB3438418B793AA00EF3F8E /* UIToolbar+AccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+AccessoryView.m"; sourceTree = "<group>"; };
+		7FB3438618B793BB00EF3F8E /* NSObject+ios7support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ios7support.h"; sourceTree = "<group>"; };
+		7FB3438718B793BB00EF3F8E /* NSObject+ios7support.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ios7support.m"; sourceTree = "<group>"; };
+		7FB3438918B7957500EF3F8E /* RKOnePixelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKOnePixelView.h; sourceTree = "<group>"; };
+		7FB3438A18B7957500EF3F8E /* RKOnePixelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKOnePixelView.m; sourceTree = "<group>"; };
+		7FB3439118B7964500EF3F8E /* UITableViewCell+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Helpers.h"; sourceTree = "<group>"; };
+		7FB3439218B7964500EF3F8E /* UITableViewCell+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Helpers.m"; sourceTree = "<group>"; };
+		7FB3439418B7966B00EF3F8E /* NSObject+NIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NIB.h"; sourceTree = "<group>"; };
+		7FB3439518B7966B00EF3F8E /* NSObject+NIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NIB.m"; sourceTree = "<group>"; };
 		7FCAB81217C4CD7E00F54EC6 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCAB81517C4CD7E00F54EC6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7FCAB81717C4CD7E00F54EC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,8 +77,6 @@
 		7FFCC3FD18082A7200CA9E52 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		7FFCC3FE18082A7200CA9E52 /* UITextField+Cursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Cursor.h"; sourceTree = "<group>"; };
 		7FFCC3FF18082A7200CA9E52 /* UITextField+Cursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Cursor.m"; sourceTree = "<group>"; };
-		7FFCC40018082A7200CA9E52 /* UIView+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helpers.h"; sourceTree = "<group>"; };
-		7FFCC40118082A7200CA9E52 /* UIView+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helpers.m"; sourceTree = "<group>"; };
 		7FFCC40918082A8800CA9E52 /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
 		7FFCC40A18082A8800CA9E52 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
 		7FFCC40C1808313300CA9E52 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -83,6 +98,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7FB3438C18B795BD00EF3F8E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				7FFCC3F418082A7200CA9E52 /* NSDate+Helpers.h */,
+				7FFCC3F518082A7200CA9E52 /* NSDate+Helpers.m */,
+				7FFCC3FC18082A7200CA9E52 /* UIImage+ImageEffects.h */,
+				7FFCC3FD18082A7200CA9E52 /* UIImage+ImageEffects.m */,
+				7FFCC3FE18082A7200CA9E52 /* UITextField+Cursor.h */,
+				7FFCC3FF18082A7200CA9E52 /* UITextField+Cursor.m */,
+				7FB3438018B7930900EF3F8E /* UIView+Helpers.h */,
+				7FB3438118B7930900EF3F8E /* UIView+Helpers.m */,
+				7FFCC40918082A8800CA9E52 /* UIActionSheet+Blocks.h */,
+				7FFCC40A18082A8800CA9E52 /* UIActionSheet+Blocks.m */,
+				7FB3438318B793AA00EF3F8E /* UIToolbar+AccessoryView.h */,
+				7FB3438418B793AA00EF3F8E /* UIToolbar+AccessoryView.m */,
+				7FB3438618B793BB00EF3F8E /* NSObject+ios7support.h */,
+				7FB3438718B793BB00EF3F8E /* NSObject+ios7support.m */,
+				7FB3439418B7966B00EF3F8E /* NSObject+NIB.h */,
+				7FB3439518B7966B00EF3F8E /* NSObject+NIB.m */,
+				7FB3439118B7964500EF3F8E /* UITableViewCell+Helpers.h */,
+				7FB3439218B7964500EF3F8E /* UITableViewCell+Helpers.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		7FB3438D18B795C600EF3F8E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7FFCC3F618082A7200CA9E52 /* RKMovingLabel.h */,
+				7FFCC3F718082A7200CA9E52 /* RKMovingLabel.m */,
+				7FFCC3F818082A7200CA9E52 /* RKRoundedImageView.h */,
+				7FFCC3F918082A7200CA9E52 /* RKRoundedImageView.m */,
+				7FFCC3FA18082A7200CA9E52 /* RKTableViewCell.h */,
+				7FFCC3FB18082A7200CA9E52 /* RKTableViewCell.m */,
+				7FB3438918B7957500EF3F8E /* RKOnePixelView.h */,
+				7FB3438A18B7957500EF3F8E /* RKOnePixelView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		7FCAB80917C4CD7E00F54EC6 = {
 			isa = PBXGroup;
 			children = (
@@ -143,22 +198,8 @@
 		7FCAB84C17C4CF5300F54EC6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				7FFCC3F418082A7200CA9E52 /* NSDate+Helpers.h */,
-				7FFCC3F518082A7200CA9E52 /* NSDate+Helpers.m */,
-				7FFCC3F618082A7200CA9E52 /* RKMovingLabel.h */,
-				7FFCC3F718082A7200CA9E52 /* RKMovingLabel.m */,
-				7FFCC3F818082A7200CA9E52 /* RKRoundedImageView.h */,
-				7FFCC3F918082A7200CA9E52 /* RKRoundedImageView.m */,
-				7FFCC3FA18082A7200CA9E52 /* RKTableViewCell.h */,
-				7FFCC3FB18082A7200CA9E52 /* RKTableViewCell.m */,
-				7FFCC3FC18082A7200CA9E52 /* UIImage+ImageEffects.h */,
-				7FFCC3FD18082A7200CA9E52 /* UIImage+ImageEffects.m */,
-				7FFCC3FE18082A7200CA9E52 /* UITextField+Cursor.h */,
-				7FFCC3FF18082A7200CA9E52 /* UITextField+Cursor.m */,
-				7FFCC40018082A7200CA9E52 /* UIView+Helpers.h */,
-				7FFCC40118082A7200CA9E52 /* UIView+Helpers.m */,
-				7FFCC40918082A8800CA9E52 /* UIActionSheet+Blocks.h */,
-				7FFCC40A18082A8800CA9E52 /* UIActionSheet+Blocks.m */,
+				7FB3438C18B795BD00EF3F8E /* Categories */,
+				7FB3438D18B795C600EF3F8E /* Views */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -230,17 +271,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB3439318B7964500EF3F8E /* UITableViewCell+Helpers.m in Sources */,
 				7FCAB82217C4CD7E00F54EC6 /* main.m in Sources */,
 				7FCAB82617C4CD7E00F54EC6 /* AppDelegate.m in Sources */,
 				7FCAB82F17C4CD7E00F54EC6 /* ViewController.m in Sources */,
 				7FFCC40218082A7200CA9E52 /* NSDate+Helpers.m in Sources */,
+				7FB3439618B7966B00EF3F8E /* NSObject+NIB.m in Sources */,
 				7FFCC40318082A7200CA9E52 /* RKMovingLabel.m in Sources */,
 				7FFCC40418082A7200CA9E52 /* RKRoundedImageView.m in Sources */,
+				7FB3438218B7930900EF3F8E /* UIView+Helpers.m in Sources */,
+				7FB3438518B793AA00EF3F8E /* UIToolbar+AccessoryView.m in Sources */,
+				7FB3438B18B7957500EF3F8E /* RKOnePixelView.m in Sources */,
 				7FFCC40518082A7200CA9E52 /* RKTableViewCell.m in Sources */,
 				7FFCC40618082A7200CA9E52 /* UIImage+ImageEffects.m in Sources */,
 				7FFCC40718082A7200CA9E52 /* UITextField+Cursor.m in Sources */,
-				7FFCC40818082A7200CA9E52 /* UIView+Helpers.m in Sources */,
 				7FFCC40B18082A8800CA9E52 /* UIActionSheet+Blocks.m in Sources */,
+				7FB3438818B793BB00EF3F8E /* NSObject+ios7support.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

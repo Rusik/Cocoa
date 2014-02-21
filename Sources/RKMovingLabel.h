@@ -1,7 +1,7 @@
 //
 //  RKMovingLabel.h
 //
-//  Created by Ruslan Kavetsky
+//  Created by Ruslan Kavetsky.
 //  Copyright (c) 2012 Ruslan Kavetsky. All rights reserved.
 //
 

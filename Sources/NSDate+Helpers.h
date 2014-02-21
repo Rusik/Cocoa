@@ -1,7 +1,7 @@
 //
 //  NSDate+Helpers.h
 //
-//  Created by Ruslan Kavetsky
+//  Created by Ruslan Kavetsky.
 //  Copyright (c) 2013 Ruslan Kavetsky. All rights reserved.
 //
 

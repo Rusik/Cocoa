@@ -1,7 +1,7 @@
 //
 //  NSDate+Helpers.m
 //
-//  Created by Ruslan Kavetsky
+//  Created by Ruslan Kavetsky.
 //  Copyright (c) 2013 Ruslan Kavetsky. All rights reserved.
 //
 
@@ -24,11 +24,19 @@
 }
 
 - (BOOL)isBeforeDate:(NSDate *)date {
-	return [self earlierDate:date] == self;
+    if ([self isEqualToDate:date]) {
+        return NO;
+    } else {
+        return [self earlierDate:date] == self;
+    }
 }
 
 - (BOOL)isAfterDate:(NSDate *)date {
-	return [self laterDate:date] == self;
+    if ([self isEqualToDate:date]) {
+        return NO;
+    } else {
+        return [self laterDate:date] == self;
+    }
 }
 
 @end

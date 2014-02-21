@@ -1,8 +1,7 @@
 //
 //  UIView+Helpers.h
-//  helpers
 //
-//  Created by Ruslan on 12/13/12.
+//  Created by Ruslan Kavetsky.
 //  Copyright (c) 2012 Ruslan. All rights reserved.
 //
 
@@ -26,14 +25,19 @@ typedef CGRect (^UIViewFrameAdjustBlock)(CGRect frame);
 
 @property (nonatomic, assign) CGPoint $origin;
 @property (nonatomic, assign) CGSize $size;
-@property (nonatomic, assign) CGFloat $x, $y, $width, $height; // normal rect properties
+@property (nonatomic, assign) CGFloat $x, $y, $width, $height;      // normal rect properties
 @property (nonatomic, assign) CGFloat $left, $top, $right, $bottom; // these will stretch/shrink the rect
 
 
 //Rotation
 - (void)rotateViewToOrientation:(UIInterfaceOrientation)orientation animated:(BOOL)animated;
 
+- (void)runSpinAnimationWithDuration:(CGFloat)duration
+                           rotations:(CGFloat)rotations
+                              repeat:(float)repeat;
+
 //Other
 - (void)recursiveEnumerateSubviewsUsingBlock:(void (^)(UIView *view, BOOL *stop))block;
+- (UIView *)findFirstResponder;
 
 @end

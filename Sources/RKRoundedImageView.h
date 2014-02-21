@@ -1,8 +1,7 @@
 //
 //  RKRoundedImageView.h
-//  round
 //
-//  Created by Ruslan Kavetsky on 2/24/13.
+//  Created by Ruslan Kavetsky.
 //  Copyright (c) 2013 Ruslan Kavetsky. All rights reserved.
 //
 
