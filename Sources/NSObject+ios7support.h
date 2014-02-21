@@ -10,7 +10,13 @@
 
 @interface NSObject (ios7support)
 
-+ (void)performForIos6Block:(void (^)())ios6Block ios7Block:(void (^)())ios7Block;
-- (void)performForIos6Block:(void (^)())ios6Block ios7Block:(void (^)())ios7Block;
++ (void)performForIos6:(void (^)())ios6Block ios7:(void (^)())ios7Block;
+- (void)performForIos6:(void (^)())ios6Block ios7:(void (^)())ios7Block;
+
+- (void)performForIos6:(void (^)())ios6Block;
++ (void)performForIos6:(void (^)())ios6Block;
+
+- (void)performForIos7:(void (^)())ios7Block;
++ (void)performForIos7:(void (^)())ios7Block;
 
 @end

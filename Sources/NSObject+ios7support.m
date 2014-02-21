@@ -10,25 +10,32 @@
 
 @implementation NSObject (ios7support)
 
-- (void)performForIos6Block:(void (^)())ios6Block ios7Block:(void (^)())ios7Block {
-	[self.class performForIos6Block:ios6Block ios7Block:ios7Block];
+- (void)performForIos6:(void (^)())ios6Block ios7:(void (^)())ios7Block {
+	[self.class performForIos6:ios6Block ios7:ios7Block];
 }
 
-+ (void)performForIos6Block:(void (^)())ios6Block ios7Block:(void (^)())ios7Block {
-
-	NSString *version = [[UIDevice currentDevice] systemVersion];
-	int ver = [version intValue];
-	if (ver < 7) {
-		//iOS 6 work
-		if (ios6Block) {
-			ios6Block();
-		}
++ (void)performForIos6:(void (^)())ios6Block ios7:(void (^)())ios7Block {
+	if ([[[UIDevice currentDevice] systemVersion] intValue] < 7) {
+		if (ios6Block) ios6Block();
 	} else {
-		//iOS 7 related work
-		if (ios7Block) {
-			ios7Block();
-		}
+		if (ios7Block) ios7Block();
 	}
+}
+
+- (void)performForIos6:(void (^)())ios6Block {
+    [self performForIos6:ios6Block ios7:nil];
+}
+
++ (void)performForIos6:(void (^)())ios6Block {
+    [self performForIos6:ios6Block ios7:nil];
+}
+
+- (void)performForIos7:(void (^)())ios7Block {
+    [self performForIos6:nil ios7:ios7Block];
+}
+
++ (void)performForIos7:(void (^)())ios7Block {
+    [self performForIos6:nil ios7:ios7Block];
 }
 
 @end
