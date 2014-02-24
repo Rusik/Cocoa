@@ -44,7 +44,7 @@
 typedef NS_ENUM (NSInteger, ArrowButtonType) {
 	ArrowButtonTypeLeft,
 	ArrowButtonTypeRight
-}
+};
 
 @interface ArrowButton : UIBarButtonItem
 
@@ -130,7 +130,7 @@ static NSString *rightArrowImageData = @"iVBORw0KGgoAAAANSUhEUgAAABoAAAAsCAYAAAB
 
 	UIToolbar *toolBar = [[UIToolbar alloc] init];
 
-	[self performForIos6Block:^{
+	[self performForIos6:^{
 
 	    ButtonsSegmentedControl *segmentedControl = [[ButtonsSegmentedControl alloc] init];
 	    segmentedControl.target = target;
@@ -146,7 +146,7 @@ static NSString *rightArrowImageData = @"iVBORw0KGgoAAAANSUhEUgAAABoAAAAsCAYAAAB
 	                                                                          action:doneActionSel];
 
 	    toolBar.items = @[segmentItem, flexibleSpace, done];
-	} ios7Block:^{
+	} ios7:^{
 
 	    ArrowButton *arrowLeft = [[ArrowButton alloc] initWithType:ArrowButtonTypeLeft
 	                                                        target:target

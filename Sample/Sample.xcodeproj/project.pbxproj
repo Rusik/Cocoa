@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F8CD98518BBEB09000E8B0D /* RKAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8CD98418BBEB09000E8B0D /* RKAlertViewController.m */; };
 		7FB3438218B7930900EF3F8E /* UIView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3438118B7930900EF3F8E /* UIView+Helpers.m */; };
 		7FB3438518B793AA00EF3F8E /* UIToolbar+AccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3438418B793AA00EF3F8E /* UIToolbar+AccessoryView.m */; };
 		7FB3438818B793BB00EF3F8E /* NSObject+ios7support.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3438718B793BB00EF3F8E /* NSObject+ios7support.m */; };
@@ -36,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F8CD98318BBEB09000E8B0D /* RKAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKAlertViewController.h; sourceTree = "<group>"; };
+		7F8CD98418BBEB09000E8B0D /* RKAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKAlertViewController.m; sourceTree = "<group>"; };
 		7FB3438018B7930900EF3F8E /* UIView+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helpers.h"; sourceTree = "<group>"; };
 		7FB3438118B7930900EF3F8E /* UIView+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helpers.m"; sourceTree = "<group>"; };
 		7FB3438318B793AA00EF3F8E /* UIToolbar+AccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+AccessoryView.h"; sourceTree = "<group>"; };
@@ -98,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F8CD98218BBEAFF000E8B0D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F8CD98318BBEB09000E8B0D /* RKAlertViewController.h */,
+				7F8CD98418BBEB09000E8B0D /* RKAlertViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		7FB3438C18B795BD00EF3F8E /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +210,7 @@
 		7FCAB84C17C4CF5300F54EC6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				7F8CD98218BBEAFF000E8B0D /* View Controllers */,
 				7FB3438C18B795BD00EF3F8E /* Categories */,
 				7FB3438D18B795C600EF3F8E /* Views */,
 			);
@@ -275,6 +288,7 @@
 				7FCAB82217C4CD7E00F54EC6 /* main.m in Sources */,
 				7FCAB82617C4CD7E00F54EC6 /* AppDelegate.m in Sources */,
 				7FCAB82F17C4CD7E00F54EC6 /* ViewController.m in Sources */,
+				7F8CD98518BBEB09000E8B0D /* RKAlertViewController.m in Sources */,
 				7FFCC40218082A7200CA9E52 /* NSDate+Helpers.m in Sources */,
 				7FB3439618B7966B00EF3F8E /* NSObject+NIB.m in Sources */,
 				7FFCC40318082A7200CA9E52 /* RKMovingLabel.m in Sources */,
