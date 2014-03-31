@@ -21,7 +21,13 @@
 - (id)init {
 	self = [super initWithItems:@[NSLocalizedString(@"Previous", nil), NSLocalizedString(@"Next", nil)]];
 	if (self) {
+
+// It is using only with iOS 6
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 		self.segmentedControlStyle = UISegmentedControlStyleBar;
+#pragma clang diagnostic pop
+
 		self.momentary = YES;
 		[self addTarget:self action:@selector(didPress) forControlEvents:UIControlEventValueChanged];
 	}

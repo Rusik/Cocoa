@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F23227A18E9BC9E0040CEC2 /* NSObject+AssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F23227918E9BC9E0040CEC2 /* NSObject+AssociatedObjects.m */; };
 		7F8CD98518BBEB09000E8B0D /* RKAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8CD98418BBEB09000E8B0D /* RKAlertViewController.m */; };
 		7FB3438218B7930900EF3F8E /* UIView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3438118B7930900EF3F8E /* UIView+Helpers.m */; };
 		7FB3438518B793AA00EF3F8E /* UIToolbar+AccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3438418B793AA00EF3F8E /* UIToolbar+AccessoryView.m */; };
@@ -37,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F23227818E9BC9E0040CEC2 /* NSObject+AssociatedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AssociatedObjects.h"; sourceTree = "<group>"; };
+		7F23227918E9BC9E0040CEC2 /* NSObject+AssociatedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedObjects.m"; sourceTree = "<group>"; };
 		7F8CD98318BBEB09000E8B0D /* RKAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKAlertViewController.h; sourceTree = "<group>"; };
 		7F8CD98418BBEB09000E8B0D /* RKAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKAlertViewController.m; sourceTree = "<group>"; };
 		7FB3438018B7930900EF3F8E /* UIView+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helpers.h"; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 				7FB3439518B7966B00EF3F8E /* NSObject+NIB.m */,
 				7FB3439118B7964500EF3F8E /* UITableViewCell+Helpers.h */,
 				7FB3439218B7964500EF3F8E /* UITableViewCell+Helpers.m */,
+				7F23227818E9BC9E0040CEC2 /* NSObject+AssociatedObjects.h */,
+				7F23227918E9BC9E0040CEC2 /* NSObject+AssociatedObjects.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 				7FFCC40218082A7200CA9E52 /* NSDate+Helpers.m in Sources */,
 				7FB3439618B7966B00EF3F8E /* NSObject+NIB.m in Sources */,
 				7FFCC40318082A7200CA9E52 /* RKMovingLabel.m in Sources */,
+				7F23227A18E9BC9E0040CEC2 /* NSObject+AssociatedObjects.m in Sources */,
 				7FFCC40418082A7200CA9E52 /* RKRoundedImageView.m in Sources */,
 				7FB3438218B7930900EF3F8E /* UIView+Helpers.m in Sources */,
 				7FB3438518B793AA00EF3F8E /* UIToolbar+AccessoryView.m in Sources */,
