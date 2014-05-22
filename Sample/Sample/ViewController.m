@@ -11,12 +11,41 @@
 #import "PickerViews+Helpers.h"
 #import "RKDescriptionView.h"
 #import "UIView+Helpers.h"
+#import "RKMulticastDelegate.h"
 
-@interface ViewController ()
+@interface TextFieldDelegate : NSObject <UITextFieldDelegate>
 
 @end
 
-@implementation ViewController
+@implementation TextFieldDelegate
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    NSLog(@"In TextFieldDelegate: textFieldDidBeginEditing");
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSLog(@"In TextFieldDelegate: textFieldShouldReturn");
+    [textField resignFirstResponder];
+    return NO;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSLog(@"In TextFieldDelegate: shouldChangeCharactersInRange");
+    return YES;
+}
+
+@end
+
+
+@interface ViewController () <UITextFieldDelegate>
+
+@end
+
+@implementation ViewController {
+    IBOutlet UITextField *_textField;
+    RKMulticastDelegate *_multicastDelegate;
+    TextFieldDelegate *_textFieldDelegate;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,6 +59,13 @@
     dv.$y = self.view.$bottom - 40;
     dv.$x = 10;
     [self.view addSubview:dv];
+
+    _multicastDelegate = [RKMulticastDelegate new];
+    _textFieldDelegate = [TextFieldDelegate new];
+    [_multicastDelegate addDelegate:self];
+    [_multicastDelegate addDelegate:_textFieldDelegate];
+
+    _textField.delegate = (id<UITextFieldDelegate>)_multicastDelegate;
 }
 
 - (IBAction)showActionSheet {
@@ -86,6 +122,22 @@
 
 
     datePicker.datePickerMode = UIDatePickerModeDate;
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    NSLog(@"In ViewController: textFieldDidBeginEditing");
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSLog(@"In ViewController: textFieldShouldReturn");
+    return YES;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSLog(@"In ViewController: shouldChangeCharactersInRange");
+    return YES;
 }
 
 @end

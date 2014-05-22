@@ -11,6 +11,7 @@
 		7F2307DB18F53626006329B3 /* PickerViews+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2307DA18F53626006329B3 /* PickerViews+Helpers.m */; };
 		7F23227A18E9BC9E0040CEC2 /* NSObject+AssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F23227918E9BC9E0040CEC2 /* NSObject+AssociatedObjects.m */; };
 		7F25C00A190E5376000ACDDE /* RKDescriptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F25C009190E5376000ACDDE /* RKDescriptionView.m */; };
+		7F63A4BA191802AA00266CE0 /* RKMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F63A4B9191802AA00266CE0 /* RKMulticastDelegate.m */; };
 		7F8CD98518BBEB09000E8B0D /* RKAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F8CD98418BBEB09000E8B0D /* RKAlertViewController.m */; };
 		7FB3438218B7930900EF3F8E /* UIView+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3438118B7930900EF3F8E /* UIView+Helpers.m */; };
 		7FB3438518B793AA00EF3F8E /* UIToolbar+AccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3438418B793AA00EF3F8E /* UIToolbar+AccessoryView.m */; };
@@ -18,6 +19,7 @@
 		7FB3438B18B7957500EF3F8E /* RKOnePixelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3438A18B7957500EF3F8E /* RKOnePixelView.m */; };
 		7FB3439318B7964500EF3F8E /* UITableViewCell+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3439218B7964500EF3F8E /* UITableViewCell+Helpers.m */; };
 		7FB3439618B7966B00EF3F8E /* NSObject+NIB.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB3439518B7966B00EF3F8E /* NSObject+NIB.m */; };
+		7FC3A800192D49AC00C7A630 /* UILabel+Adjust.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3A7FE192D49AC00C7A630 /* UILabel+Adjust.m */; };
 		7FC9F00318F46C2B00F0122A /* RKRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC9EFFE18F46C2B00F0122A /* RKRow.m */; };
 		7FC9F00418F46C2B00F0122A /* RKSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC9F00018F46C2B00F0122A /* RKSection.m */; };
 		7FC9F00518F46C2B00F0122A /* RKTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC9F00218F46C2B00F0122A /* RKTableData.m */; };
@@ -50,6 +52,8 @@
 		7F23227918E9BC9E0040CEC2 /* NSObject+AssociatedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AssociatedObjects.m"; sourceTree = "<group>"; };
 		7F25C008190E5376000ACDDE /* RKDescriptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKDescriptionView.h; sourceTree = "<group>"; };
 		7F25C009190E5376000ACDDE /* RKDescriptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKDescriptionView.m; sourceTree = "<group>"; };
+		7F63A4B8191802AA00266CE0 /* RKMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKMulticastDelegate.h; sourceTree = "<group>"; };
+		7F63A4B9191802AA00266CE0 /* RKMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKMulticastDelegate.m; sourceTree = "<group>"; };
 		7F8CD98318BBEB09000E8B0D /* RKAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKAlertViewController.h; sourceTree = "<group>"; };
 		7F8CD98418BBEB09000E8B0D /* RKAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKAlertViewController.m; sourceTree = "<group>"; };
 		7FB3438018B7930900EF3F8E /* UIView+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Helpers.h"; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 		7FB3439218B7964500EF3F8E /* UITableViewCell+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Helpers.m"; sourceTree = "<group>"; };
 		7FB3439418B7966B00EF3F8E /* NSObject+NIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NIB.h"; sourceTree = "<group>"; };
 		7FB3439518B7966B00EF3F8E /* NSObject+NIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NIB.m"; sourceTree = "<group>"; };
+		7FC3A7FE192D49AC00C7A630 /* UILabel+Adjust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Adjust.m"; sourceTree = "<group>"; };
+		7FC3A7FF192D49AC00C7A630 /* UILabel+Adjust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Adjust.h"; sourceTree = "<group>"; };
 		7FC9EFFD18F46C2B00F0122A /* RKRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKRow.h; sourceTree = "<group>"; };
 		7FC9EFFE18F46C2B00F0122A /* RKRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKRow.m; sourceTree = "<group>"; };
 		7FC9EFFF18F46C2B00F0122A /* RKSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKSection.h; sourceTree = "<group>"; };
@@ -119,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F63A4B71918029C00266CE0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				7F63A4B8191802AA00266CE0 /* RKMulticastDelegate.h */,
+				7F63A4B9191802AA00266CE0 /* RKMulticastDelegate.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		7F8CD98218BBEAFF000E8B0D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +168,8 @@
 				7F23227918E9BC9E0040CEC2 /* NSObject+AssociatedObjects.m */,
 				7F2307D918F53626006329B3 /* PickerViews+Helpers.h */,
 				7F2307DA18F53626006329B3 /* PickerViews+Helpers.m */,
+				7FC3A7FF192D49AC00C7A630 /* UILabel+Adjust.h */,
+				7FC3A7FE192D49AC00C7A630 /* UILabel+Adjust.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -251,6 +268,7 @@
 				7F8CD98218BBEAFF000E8B0D /* View Controllers */,
 				7FB3438C18B795BD00EF3F8E /* Categories */,
 				7FB3438D18B795C600EF3F8E /* Views */,
+				7F63A4B71918029C00266CE0 /* Other */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -322,8 +340,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F63A4BA191802AA00266CE0 /* RKMulticastDelegate.m in Sources */,
 				7FB3439318B7964500EF3F8E /* UITableViewCell+Helpers.m in Sources */,
 				7FC9F00418F46C2B00F0122A /* RKSection.m in Sources */,
+				7FC3A800192D49AC00C7A630 /* UILabel+Adjust.m in Sources */,
 				7FCAB82217C4CD7E00F54EC6 /* main.m in Sources */,
 				7F25C00A190E5376000ACDDE /* RKDescriptionView.m in Sources */,
 				7FCAB82617C4CD7E00F54EC6 /* AppDelegate.m in Sources */,
